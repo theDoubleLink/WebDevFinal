@@ -7,8 +7,5 @@ This MVP implements the three-page structure from the wireframe image (Home, Eve
 - **Events (events.html):** Filters (left) + Search/Sort (right); Event List with Selected Event Preview.
 - **Dining (dining.html):** Dietary Filters + User Preferences; Menu + Open Hours & Status.
 
-## Tech
-- HTML5, CSS3, JavaScript
-- Bootstrap 5 (CDN)
-- LocalStorage for theme and favorites
+
 
