@@ -1,4 +1,4 @@
-# Campus Life Super App — MVP (Wireframe-Accurate)
+# Campus Life Super App — MVP 
 
 This MVP implements the three-page structure from the wireframe image (Home, Events, Dining) with Bootstrap styling, event-driven JavaScript, API placeholders, and accessibility basics.
 

@@ -16,14 +16,8 @@
       <a class="navbar-brand fw-bold" href="index.html" aria-label="Campus Life Super App Home">
         Campus Life
       </a>
-
-      <form class="d-none d-md-flex" role="search" aria-label="Global search">
-        <input id="globalSearch" class="form-control me-2" type="search" placeholder="Search campus…" aria-label="Search" />
-        <button class="btn btn-outline-primary" type="button" id="searchBtn">Search</button>
-      </form>
-
       <div class="d-flex gap-2">
-        <a class="btn btn-primary" href="#" role="button" aria-label="Sign in">Sign in</a>
+        <button class="btn btn-outline-secondary" id="themeToggle" aria-pressed="false" aria-label="Toggle dark mode">🌓</button>
       </div>
     </div>
 
@@ -40,14 +34,6 @@
             <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
           </ul>
-
-          <!-- Small-screen search -->
-          <form class="d-md-none w-100 my-2" role="search" aria-label="Global search mobile">
-            <div class="input-group">
-              <input id="globalSearchMobile" class="form-control" type="search" placeholder="Search campus…" aria-label="Search" />
-              <button class="btn btn-outline-primary" type="button" id="searchBtnMobile">Search</button>
-            </div>
-          </form>
         </div>
       </div>
     </nav>
@@ -73,8 +59,21 @@
             <h2 id="upcomingHeading" class="h5 mb-0">Upcoming Events</h2>
             <a class="btn btn-sm btn-outline-primary" href="events.html">See All</a>
           </div>
-          <div class="card-body" id="eventsPreview">
-          </div>
+          <div class="card-body">
+  <div class="row g-3 align-items-stretch">
+    <div class="col-12 col-xl-7">
+      <div id="eventsPreview" aria-live="polite" aria-busy="true"></div>
+    </div>
+    <div class="col-12 col-xl-5">
+      <div class="card h-100">
+        <div class="card-header"><h3 class="h6 mb-0">Weather</h3></div>
+        <div class="card-body" id="weatherBlock">
+          <p class="text-muted mb-0">Loading weather…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
@@ -92,9 +91,7 @@
         <div class="card h-100">
           <div class="card-header"><h2 id="mapHeading" class="h5 mb-0">Campus Map</h2></div>
           <div class="card-body">
-            <div class="ratio ratio-16x9 border rounded d-flex align-items-center justify-content-center text-muted">
-              <span>Mini map (image/iframe placeholder)</span>
-            </div>
+            <img src="images/gvu-campus-map.png" class="img-fluid rounded border" alt="Grand View University campus map">
           </div>
         </div>
       </section>
@@ -104,10 +101,10 @@
         <div class="card h-100">
           <div class="card-header"><h2 id="quickHeading" class="h5 mb-0">Quick Actions</h2></div>
           <div class="card-body d-grid gap-2">
-            <button class="btn btn-outline-secondary" data-action="report-issue">Report Issue</button>
-            <button class="btn btn-outline-secondary" data-action="book-room">Book Room</button>
-            <button class="btn btn-outline-secondary" data-action="find-tutor">Find Tutor</button>
-            <button class="btn btn-outline-secondary" data-action="dart-status">DART Status</button>
+            <a class="btn btn-outline-secondary" href="mailto:brandt.bandstra@grandview.edu?subject=Campus%20Issue">Report Issue</a>
+            <a class="btn btn-outline-secondary" href="mailto:librarian@grandview.edu?subject=Room%20Booking%20Request">Book Room</a>
+            <a class="btn btn-outline-secondary" href="https://grandview.mywconline.com/" target="_blank" rel="noopener">Find Tutor</a>
+            <a class="btn btn-outline-secondary" href="https://www.ridedart.com/system-overview" target="_blank" rel="noopener">DART Status</a>
           </div>
         </div>
       </section>
